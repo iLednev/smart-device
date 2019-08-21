@@ -1,0 +1,16 @@
+.page {
+  margin: 0;
+  padding-top: 32px;
+  background-image: url("../img/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @media (max-width: 1439px) {
+    padding-top: 18px;
+    background-image: url(../img/main-bg-tablet.png);
+  }
+
+  @media (max-width: 749px) {
+    padding-top: 16px;
+  }
+}

@@ -1,0 +1,49 @@
+.logo {
+  display: flex;
+  padding-top: 1px;
+  padding-left: 3px;
+  width: 214px;
+
+  @media (max-width: 1439px) {
+    padding-left: 0;
+    width: 202px;
+  }
+
+  @media (max-width: 749px) {
+    width: 38px;
+  }
+}
+
+.logo__pic {
+  width: 52px;
+  height: 52px;
+
+  @media (max-width: 749px) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.logo__name {
+  margin: 0;
+  margin-left: 16px;
+  padding-top: 10px;
+  width: 160px;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 20px;
+
+  @media (max-width: 749px) {
+    display: none;
+  }
+}
+
+.logo__tagline {
+  color: #788891;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 0;
+}

@@ -5,9 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+<body class="page">
+  <h1 class="visually-hidden">Smart Device - умные технологии</h1>
+  <header class="main-header">
+    <div class="main-header__content">
+      <div class="main-header__logo  logo">
+        <img src="img/logo.svg" class="logo__pic" alt="Логотип Smart Device">
+        <p class="logo__name">
+          Smart Device
+          <span class="logo__tagline">умные технологии</span>
+        </p>
+      </div>
+      <button class="main-header__menu"><span class="visually-hidden">Открыть меню</span></button>
+      <address class="main-header__info  header-info">
+        <a class="header-info__link  header-info__link--email" href="mailto:info@sd.ru">
+          <span class="header-info__mobile-hidden">info@sd.ru</span>
+        </a>
+        <a class="header-info__link  header-info__link--phone" href="tel:84950005252">
+          <span class="header-info__mobile-hidden">+7 (495) 000 52 52</span>
+        </a>
+      </address>
+      <a class="main-header__callback" href="#"><span class="main-header__mobile-hidden">Заказать звонок</span></a>
+    </div>
+  </header>
 </body>
 </html>
