@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page">
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
   <h1 class="visually-hidden">Smart Device - умные технологии</h1>
   <header class="main-header">
     <div class="main-header__content">
@@ -30,5 +34,135 @@
       <a class="main-header__callback" href="#"><span class="main-header__mobile-hidden">Заказать звонок</span></a>
     </div>
   </header>
+
+  <footer class="main-footer">
+    <div class="main-footer__content">
+      <section class="main-footer__socials  footer-socials">
+        <div class="footer-socials__content">
+          <h2 class="visually-hidden">Логотип и соцсети</h2>
+          <div class="footer-socials__logo  logo  logo--footer">
+            <img src="img/logo.svg" class="logo__pic  logo__pic--footer" alt="Логотип Smart Device">
+            <p class="logo__name  logo__name--footer">
+              Service Device
+              <span class="logo__tagline">умные технологии</span>
+            </p>
+          </div>
+
+          <p class="footer-socials__text">1999-2018 SD Service Devices</p>
+
+          <ul class="footer-socials__list">
+            <li class="footer-socials__item">
+              <a class="footer-socials__link" href="#">
+                <svg class="footer-socials__img">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+                <span class="visually-hidden" lang="en">Facebook</span>
+              </a>
+            </li>
+            <li class="footer-socials__item">
+              <a class="footer-socials__link" href="#">
+                <svg class="footer-socials__img">
+                  <use xlink:href="#icon-classmates"></use>
+                </svg>
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+            <li class="footer-socials__item">
+              <a class="footer-socials__link" href="#">
+                <svg class="footer-socials__img">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="main-footer__lists">
+        <section class="main-footer__sections  footer-sections">
+          <div class="footer-sections__content">
+            <header class="footer-sections__header">
+              <h2 class="footer-sections__heading">Разделы сайта</h2>
+              <button class="footer-sections__button  js-check-button  closed">
+                <span class="visually-hidden">Открыть раздел</span>
+              </button>
+            </header>
+            <ul class="footer-sections__list  js-check-list  closed">
+              <li class="footer-sections__item">
+                <a class="footer-sections__link" href="#">О компании</a>
+              </li>
+              <li class="footer-sections__item">
+                <a class="footer-sections__link" href="#">Комплектующие</a>
+              </li>
+              <li class="footer-sections__item">
+                <a class="footer-sections__link" href="#">Продукты</a>
+              </li>
+              <li class="footer-sections__item">
+                <a class="footer-sections__link" href="#">Доставка</a>
+              </li>
+              <li class="footer-sections__item">
+                <a class="footer-sections__link" href="#">Производство печатных плат</a>
+              </li>
+              <li class="footer-sections__item">
+                <a class="footer-sections__link" href="#">Контакты</a>
+              </li>
+              <li class="footer-sections__item">
+                <a class="footer-sections__link" href="#">Монтаж печатных плат</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="main-footer__contacts  footer-contacts">
+          <div class="footer-contacts__content">
+            <header class="footer-contacts__header">
+              <h2 class="footer-contacts__heading">Наш офис</h2>
+              <button class="footer-contacts__button  js-check-button">
+                <span class="visually-hidden">Открыть раздел</span>
+              </button>
+            </header>
+            <address class="footer-contacts__address  js-check-list">
+              <p class="footer-contacts__street">
+                г. Мытищи, Олимпийский проспект, д.10
+              </p>
+              <ul class="footer-contacts__list">
+                <li class="footer-contacts__item">
+                  <a class="footer-contacts__link" href="tel:84955894050">
+                    +7 (495) 589-40-50
+                  </a>
+                </li>
+                <li class="footer-contacts__item">
+                  <a class="footer-contacts__link" href="tel:89250038767">
+                    +7 (925) 003-87-67
+                  </a>
+                </li>
+                <li class="footer-contacts__item">
+                  <a class="footer-contacts__link" href="tel:892692608079">
+                    +7 (926) 926-080-79
+                  </a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="main-footer__copyright  footer-copyright">
+      <div class="footer-copyright__content">
+        <h2 class="visually-hidden">Раздел авторских прав</h2>
+        <p class="footer-copyright__text  footer-copyright__text--desktop-only">Все права защищены</p>
+        <p class="footer-copyright__text  footer-copyright__text--desktop-only">1999-2018 SD Service Devices</p>
+        <p class="footer-copyright__text">
+          <a class="footer-copyright__link" href="#">Условия конфиденциальности</a>
+        </p>
+        <p class="footer-copyright__text">
+          <a class="footer-copyright__link" href="#">Developed by wow studio</a>
+        </p>
+      </div>
+    </section>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

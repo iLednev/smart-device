@@ -1,3 +1,5 @@
+$textgray: #788891;
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -7,4 +9,61 @@
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+@mixin plus-button {
+  display: block;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  background: none;
+  background-image: url("../img/minus.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border: none;
+
+  &.closed {
+    background-image: url("../img/plus.svg");
+  }
+}
+
+@mixin desktop-content {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 1440px;
+}
+
+@mixin tablet-content {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 750px;
+}
+
+@mixin mobile-content {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 320px;
+}
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin footer-heading {
+  margin: 0;
+  padding-left: 3px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
 }

@@ -1,24 +1,22 @@
+.main-header {
+  flex: 1 0 auto;
+}
+
 .main-header__content {
-  box-sizing: border-box;
+  @include desktop-content;
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 1440px;
 
   & a {
     text-decoration: none;
   }
 
   @media (max-width: 1439px) {
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 750px;
+    @include tablet-content;
   }
 
   @media (max-width: 749px) {
-    width: 320px;
+    @include mobile-content;
   }
 }
 

@@ -12,6 +12,10 @@
   @media (max-width: 749px) {
     width: 38px;
   }
+
+  &--footer {
+    width: 220px;
+  }
 }
 
 .logo__pic {
@@ -22,26 +26,41 @@
     width: 38px;
     height: 38px;
   }
+
+  &--footer {
+    @media (max-width: 749px) {
+      width: 52px;
+      height: 52px;
+    }
+  }
 }
 
 .logo__name {
   margin: 0;
   margin-left: 16px;
-  padding-top: 10px;
+  padding-top: 12px;
   width: 160px;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: bold;
   font-size: 25px;
-  line-height: 20px;
+  line-height: 18px;
 
   @media (max-width: 749px) {
     display: none;
   }
+
+  &--footer {
+    color: #000000;
+
+    @media (max-width: 749px) {
+      display: block;
+    }
+  }
 }
 
 .logo__tagline {
-  color: #788891;
+  color: $textgray;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   font-size: 12px;

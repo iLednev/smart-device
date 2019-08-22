@@ -1,6 +1,13 @@
+html {
+  height: 100%;
+}
+
 .page {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding-top: 32px;
+  height: 100%;
   background-image: url("../img/main-bg.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
