@@ -3,7 +3,7 @@
   justify-content: space-between;
   min-width: 430px;
   font-style: normal;
-  color: #ffffff;
+  color: $white;
 
   @media (max-width: 1439px) {
     min-width: 84px;
@@ -16,7 +16,7 @@
 
 .header-info__link {
   position: relative;
-  color: #ffffff;
+  color: $white;
   font-family: "Pt Mono", "Times New Roman", serif;
   font-size: 16px;
   line-height: 18px;
