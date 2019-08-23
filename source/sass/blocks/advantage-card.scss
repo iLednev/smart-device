@@ -1,0 +1,120 @@
+.advantage-card {
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-left: 41px;
+  width: 570px;
+  border: 1px solid lightgrey;
+  border-left: 3px solid $lightblue;
+
+  &:hover {
+    border-color: $lightblue;
+    background-color: $lightblue;
+    cursor: pointer;
+
+    & .advantage-card__heading,
+    & .advantage-card__description,
+    & .advantage-card__icon {
+      color: $white;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    padding-top: 25px;
+    padding-left: 25px;
+    width: 345px;
+    border-left: 2px solid $lightblue;
+  }
+
+  @media (max-width: 749px) {
+    padding-top: 25px;
+    padding-left: 24px;
+    width: 290px;
+  }
+}
+
+.advantage-card__icon {
+  margin-bottom: 17px;
+  width: 35px;
+  height: 35px;
+  color: $lightblue;
+
+  @media (max-width: 1439px) {
+    margin-bottom: 3px;
+    width: 32px;
+    height: 34px;
+  }
+
+  @media (max-width: 749px) {
+    margin-bottom: 6px;
+  }
+}
+
+.advantage-card__heading {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 484px;
+
+  color: $lightblue;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+
+  @media (max-width: 1439px) {
+    margin-bottom: 8px;
+    width: 300px;
+
+    &--wrong {
+      margin-bottom: 12px;
+    }
+  }
+
+  @media (max-width: 749px) {
+    width: 245px;
+    font-size: 20px;
+    line-height: 28px;
+
+    &--wrong {
+      margin-top: -7px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.advantage-card__description {
+  margin: 0;
+  margin-bottom: 49px;
+  width: 484px;
+  min-height: 103px;
+
+  color: #666666;
+  font-family: "PT Mono", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  & span {
+    display: none;
+  }
+
+  @media (max-width: 1439px) {
+    width: 296px;
+    min-height: 102px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 749px) {
+    margin-bottom: 27px;
+    width: 245px;
+
+    &--wide {
+      width: 250px;
+    }
+
+    &--wrong {
+      margin-top: -7px;
+      margin-bottom: 17px;
+    }
+  }
+}
