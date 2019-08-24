@@ -18,10 +18,10 @@
 }
 
 .about-company__heading {
+  @include font-roboto-condensed;
   margin: 0;
   margin-bottom: 20px;
   width: 300px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
@@ -42,10 +42,10 @@
 }
 
 .about-company__description {
+  @include font-pt-mono;
   margin: 0;
   margin-bottom: 20px;
   width: 980px;
-  font-family: "PT Mono", "Times New Roman", serif;
   font-size: 16px;
   line-height: 22px;
   color: #666666;
@@ -85,6 +85,7 @@
 }
 
 .about-company__link {
+  @include font-roboto-condensed;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -96,7 +97,6 @@
   border-radius: 5px;
 
   color: $lightblue;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: bold;
   line-height: 16px;

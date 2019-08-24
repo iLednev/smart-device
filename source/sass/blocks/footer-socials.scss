@@ -41,11 +41,11 @@
   display: none;
 
   @media (max-width: 1439px) {
+    @include font-pt-mono;
     display: block;
     margin: 0;
     margin-right: auto;
     color: $textgray;
-    font-family: "PT Mono", "Times New Roman", serif;
     font-size: 12px;
     line-height: 24px;
     text-transform: uppercase;

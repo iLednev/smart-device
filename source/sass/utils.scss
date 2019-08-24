@@ -2,6 +2,7 @@ $textgray: #788891;
 $lightblue: #00b2ff;
 $white: #ffffff;
 
+//noinspection Stylelint
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -11,6 +12,14 @@ $white: #ffffff;
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+@mixin font-roboto-condensed {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+@mixin font-pt-mono {
+  font-family: "PT Mono", "Times New Roman", serif;
 }
 
 @mixin plus-button {
@@ -60,9 +69,9 @@ $white: #ffffff;
 }
 
 @mixin footer-heading {
+  @include font-roboto-condensed;
   margin: 0;
   padding-left: 3px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;

@@ -50,12 +50,12 @@
 }
 
 .advantage-card__heading {
+  @include font-roboto-condensed;
   margin: 0;
   margin-bottom: 15px;
   width: 484px;
 
   color: $lightblue;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
@@ -82,13 +82,13 @@
 }
 
 .advantage-card__description {
+  @include font-pt-mono;
   margin: 0;
   margin-bottom: 49px;
   width: 484px;
   min-height: 103px;
 
   color: #666666;
-  font-family: "PT Mono", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

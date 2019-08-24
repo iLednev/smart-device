@@ -33,7 +33,7 @@
 }
 
 .footer-contacts__address {
-  font-family: "PT Mono", "Times New Roman", serif;
+  @include font-pt-mono;
   font-style: normal;
   font-size: 15px;
   line-height: 25px;

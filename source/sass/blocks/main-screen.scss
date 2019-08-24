@@ -19,11 +19,11 @@
 }
 
 .main-screen__heading {
+  @include font-roboto-condensed;
   margin: 0;
   margin-bottom: 30px;
   width: 720px;
   color: $white;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   line-height: 94px;
   text-transform: uppercase;
@@ -46,13 +46,13 @@
 }
 
 .main-screen__description {
+  @include font-pt-mono;
   position: relative;
   margin: 0;
   margin-bottom: 42px;
   padding-left: 94px;
   width: 683px;
   color: $white;
-  font-family: "PT Mono", "Times New Roman", serif;
   font-size: 22px;
   line-height: 34px;
   text-transform: lowercase;
@@ -94,6 +94,7 @@
 }
 
 .main-screen__link {
+  @include font-roboto-condensed;
   margin-bottom: 275px;
   margin-left: 94px;
   display: flex;
@@ -104,7 +105,6 @@
   background-color: $lightblue;
   border-radius: 5px;
   color: $white;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: bold;
   line-height: 19px;
@@ -140,13 +140,13 @@
 }
 
 .main-screen__scroll {
+  @include font-pt-mono;
   position: absolute;
   bottom: 127px;
   left: -16px;
   margin: 0;
   transform: rotate(-90deg);
   color: $textgray;
-  font-family: "PT Mono", "Times New Roman", serif;
   font-size: 14px;
   line-height: 16px;
 

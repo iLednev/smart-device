@@ -15,9 +15,9 @@
 }
 
 .header-info__link {
+  @include font-pt-mono;
   position: relative;
   color: $white;
-  font-family: "Pt Mono", "Times New Roman", serif;
   font-size: 16px;
   line-height: 18px;
 

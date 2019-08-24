@@ -36,12 +36,12 @@
 }
 
 .logo__name {
+  @include font-roboto-condensed;
   margin: 0;
   margin-left: 16px;
   padding-top: 12px;
   width: 160px;
   color: $white;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: bold;
   font-size: 25px;
   line-height: 18px;

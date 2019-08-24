@@ -50,7 +50,7 @@
 }
 
 .footer-sections__link {
-  font-family: "PT Mono", "Times New Roman", serif;
+  @include font-pt-mono;
   color: $textgray;
   font-size: 15px;
   line-height: 25px;
