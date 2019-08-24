@@ -1,0 +1,129 @@
+.about-company__content {
+  @include desktop-content;
+  position: relative;
+  width: 1200px;
+  padding-top: 76px;
+  padding-left: 204px;
+
+  @media (max-width: 1439px) {
+    @include tablet-content;
+    padding-top: 23px;
+    padding-left: 200px;
+  }
+
+  @media (max-width: 749px) {
+    @include mobile-content;
+    padding-top: 36px;
+  }
+}
+
+.about-company__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  width: 300px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  color: #666666;
+
+  @media (max-width: 1439px) {
+    margin-bottom: 24px;
+    width: 200px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: 749px) {
+    margin-bottom: 21px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.about-company__description {
+  margin: 0;
+  margin-bottom: 20px;
+  width: 980px;
+  font-family: "PT Mono", "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+
+  &:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 1439px) {
+    padding-left: 4px;
+    width: 535px;
+  }
+
+  @media (max-width: 749px) {
+    margin-bottom: 40px;
+    padding-left: 3px;
+    width: 290px;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.about-company__points {
+  display: none;
+
+  @media (max-width: 1439px) {
+    display: inline;
+  }
+}
+
+.about-company__longtext {
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.about-company__link {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 110px;
+  width: 180px;
+  height: 45px;
+  border: 1px solid $lightblue;
+  border-radius: 5px;
+
+  color: $lightblue;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @media (max-width: 1439px) {
+    margin-bottom: 84px;
+    margin-left: 3px;
+  }
+
+  @media (max-width: 749px) {
+    margin-bottom: 64px;
+  }
+}
+
+.about-company__year {
+  position: absolute;
+  top: 81px;
+  left: -6px;
+
+  @media (max-width: 1439px) {
+    top: 20px;
+    left: -10px;
+  }
+
+  @media (max-width: 749px) {
+    display: none;
+  }
+}
