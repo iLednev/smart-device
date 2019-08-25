@@ -1,10 +1,16 @@
-.service-card {
+.service-card__link {
   box-sizing: border-box;
   display: flex;
   padding-top: 50px;
   padding-left: 43px;
   width: 370px;
   height: 620px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    outline: 2px solid $lightblue;
+  }
 
   &:nth-child(1) {
     background-image: url("../img/service-item-1@1x.png");
@@ -30,7 +36,7 @@
     }
   }
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     padding-top: 40px;
     padding-left: 45px;
     width: 720px;
@@ -63,13 +69,14 @@
     }
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     padding-top: 20px;
     padding-left: 35px;
     width: 290px;
     height: 256px;
 
     &:nth-child(1) {
+      width: 290px;
       background-image: url("../img/service-item-1-mobile@1x.png");
 
       @media (min-resolution: 1.5dppx) {
@@ -105,7 +112,7 @@
   line-height: 30px;
 }
 
-.service-card__link {
+.service-card__arrow {
   display: flex;
   justify-content: center;
   align-items: center;

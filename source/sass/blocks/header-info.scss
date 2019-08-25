@@ -5,11 +5,11 @@
   font-style: normal;
   color: $white;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     min-width: 84px;
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     min-width: 74px;
   }
 }
@@ -39,7 +39,7 @@
     background-image: url("../img/mail.svg");
   }
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     padding: 0;
     width: 25px;
     height: 19px;
@@ -60,7 +60,7 @@
     background-image: url("../img/phone.svg");
   }
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     padding: 0;
     width: 24px;
     height: 24px;
@@ -72,9 +72,8 @@
   }
 }
 
-
 .header-info__mobile-hidden {
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     display: none;
   }
 }

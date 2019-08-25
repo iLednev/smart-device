@@ -1,17 +1,19 @@
 .about-company__content {
   @include desktop-content;
+  display: flex;
+  flex-direction: column;
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
   padding-top: 76px;
   padding-left: 204px;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     @include tablet-content;
     padding-top: 23px;
     padding-left: 200px;
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     @include mobile-content;
     padding-top: 36px;
   }
@@ -21,20 +23,20 @@
   @include font-roboto-condensed;
   margin: 0;
   margin-bottom: 20px;
-  width: 300px;
+  max-width: 300px;
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
   color: #666666;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     margin-bottom: 24px;
-    width: 200px;
+    max-width: 200px;
     font-size: 32px;
     line-height: 45px;
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     margin-bottom: 21px;
     font-size: 28px;
     line-height: 39px;
@@ -45,7 +47,7 @@
   @include font-pt-mono;
   margin: 0;
   margin-bottom: 20px;
-  width: 980px;
+  max-width: 980px;
   font-size: 16px;
   line-height: 22px;
   color: #666666;
@@ -54,15 +56,16 @@
     margin-bottom: 40px;
   }
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     padding-left: 4px;
-    width: 535px;
+    max-width: 650px;
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     margin-bottom: 40px;
     padding-left: 3px;
-    width: 290px;
+    max-width: 500px;
+    min-width: 290px;
 
     &:last-of-type {
       margin-bottom: 30px;
@@ -73,13 +76,13 @@
 .about-company__points {
   display: none;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     display: inline;
   }
 }
 
 .about-company__longtext {
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     display: none;
   }
 }
@@ -103,12 +106,12 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     margin-bottom: 84px;
     margin-left: 3px;
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     margin-bottom: 64px;
   }
 }
@@ -118,12 +121,12 @@
   top: 81px;
   left: -6px;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     top: 20px;
     left: -10px;
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }

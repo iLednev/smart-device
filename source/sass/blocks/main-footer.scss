@@ -10,14 +10,15 @@
   margin-bottom: 57px;
   padding-top: 65px;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
+    @include tablet-content;
     display: block;
     margin-bottom: 35px;
     padding: 0;
-    width: 100%;
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
+    @include mobile-content;
     margin-bottom: 26px;
   }
 }
@@ -25,7 +26,7 @@
 .main-footer__socials {
   margin-right: 205px;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     margin: 0;
   }
 }
@@ -33,13 +34,13 @@
 .main-footer__lists {
   display: flex;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     @include tablet-content;
     padding-top: 38px;
   }
 
-  @media (max-width: 749px) {
-    width: 100%;
+  @media (max-width: 767px) {
+    @include mobile-content;
     padding: 0;
     display: block;
   }
@@ -48,11 +49,11 @@
 .main-footer__sections {
   margin-right: auto;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     margin-right: 125px;
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     margin-right: 0;
   }
 }

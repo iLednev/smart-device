@@ -1,13 +1,13 @@
 .footer-contacts {
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     border-top: 1px solid rgba(98, 105, 98, 0.2);
   }
 }
 
 .footer-contacts__content {
-  width: 340px;
+  max-width: 340px;
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     @include mobile-content;
     margin-bottom: 25px;
     padding-top: 28px;
@@ -27,7 +27,7 @@
 .footer-contacts__button {
   display: none;
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     @include plus-button;
   }
 }
@@ -39,7 +39,7 @@
   line-height: 25px;
   color: $textgray;
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     width: 200px;
 
     &.closed {

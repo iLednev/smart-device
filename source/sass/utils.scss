@@ -43,7 +43,8 @@ $white: #ffffff;
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
-  width: 1440px;
+  min-width: 1024px;
+  max-width: 1440px;
 }
 
 @mixin tablet-content {
@@ -51,7 +52,8 @@ $white: #ffffff;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 750px;
+  min-width: 768px;
+  max-width: 900px;
 }
 
 @mixin mobile-content {
@@ -59,7 +61,8 @@ $white: #ffffff;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 320px;
+  min-width: 290px;
+  max-width: 500px;
 }
 
 @mixin list-reset {

@@ -45,11 +45,13 @@
           <span class="main-screen__mobile-text">Бесплатная консультация</span>
         </a>
         <p class="main-screen__scroll">Скролл вниз</p>
-        <picture>
-          <source srcset="img/circuit-boards-mobile@1x.png, img/circuit-boards-mobile@2x.png" media="(max-width: 749px)">
-          <source srcset="img/circuit-boards-tablet@1x.png, img/circuit-boards-tablet@2x.png" media="(max-width: 1439px)">
-          <img class="main-screen__image" src="img/circuit-boards@1x.png" srcset="img/circuit-boards@1x.png, img/circuit-boards@2x.png" alt="Изображение печатной платы">
-        </picture>
+        <div class="main-screen__image">
+          <picture>
+            <source srcset="img/circuit-boards-mobile@1x.png, img/circuit-boards-mobile@2x.png" media="(max-width: 767px)">
+            <source srcset="img/circuit-boards-tablet@1x.png, img/circuit-boards-tablet@2x.png" media="(max-width: 1023px)">
+            <img src="img/circuit-boards@1x.png" srcset="img/circuit-boards@1x.png, img/circuit-boards@2x.png" alt="Изображение печатной платы">
+          </picture>
+        </div>
       </div>
     </section>
 
@@ -108,7 +110,7 @@
         </p>
         <a class="about-company__link">Подробнее</a>
         <picture>
-          <source srcset="img/company-year-tablet@1x.png, img/company-year-tablet@2x.png" media="(max-width: 1439px)">
+          <source srcset="img/company-year-tablet@1x.png, img/company-year-tablet@2x.png" media="(max-width: 1023px)">
           <img class="about-company__year" src="img/company-year@1x.png" srcset="img/company-year@1x.png, img/company-year@2x.png 2x" alt="изображение числа 2005">
         </picture>
       </div>
@@ -122,24 +124,48 @@
         </p>
         <ul class="services__list">
           <li class="services__item  service-card">
-            <h3 class="service-card__heading">Производство печатных плат</h3>
             <a class="service-card__link" href="#">
               <span class="visually-hidden">Подробнее</span>
+              <h3 class="service-card__heading">Производство печатных плат</h3>
+              <div class="service-card__arrow" href="#"></div>
             </a>
           </li>
           <li class="services__item  service-card">
-            <h3 class="service-card__heading">Монтаж печатных плат</h3>
             <a class="service-card__link" href="#">
               <span class="visually-hidden">Подробнее</span>
+              <h3 class="service-card__heading">Монтаж печатных плат</h3>
+              <div class="service-card__arrow" href="#"></div>
             </a>
           </li>
           <li class="services__item  service-card">
-            <h3 class="service-card__heading">Комплектующие для светотехники</h3>
             <a class="service-card__link" href="#">
               <span class="visually-hidden">Подробнее</span>
+              <h3 class="service-card__heading">Комплектующие для светотехники</h3>
+              <div class="service-card__arrow" href="#"></div>
             </a>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="main__feedback  feedback">
+      <div class="feedback__content">
+        <div class="feedback__wrapper">
+          <h2 class="feedback__heading">Остались вопросы? Задайте их нам!</h2>
+          <p class="feedback__lead">Мы проконсультируем Вас бесплатно</p>
+          <div class="feedback__form">
+            <form>
+              <input type="text" placeholder="Имя">
+              <input type="tel" placeholder="Телефон">
+              <textarea>Ваш вопрос</textarea>
+              <button type="submit">Задать вопрос</button>
+              <label>
+                <input class="visually-hidden" type="checkbox" checked>
+                <span>Я согласен на обработку персональных данных</span>
+              </label>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   </main>

@@ -1,3 +1,7 @@
+.main-screen {
+  overflow: hidden;
+}
+
 .main-screen__content {
   @include desktop-content;
   display: flex;
@@ -6,13 +10,13 @@
   padding-top: 228px;
   padding-left: 22px;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     @include tablet-content;
     padding-top: 116px;
     padding-left: 82px;
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     @include mobile-content;
     padding-top: 231px;
   }
@@ -29,14 +33,14 @@
   text-transform: uppercase;
   letter-spacing: 5.5px;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     width: 470px;
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 4px;
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     margin-bottom: 27px;
     width: 277px;
     font-size: 40px;
@@ -67,7 +71,7 @@
     background-color: #ffffff;
   }
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     margin-bottom: 55px;
     padding-left: 48px;
     width: 356px;
@@ -79,7 +83,7 @@
     }
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     margin-bottom: 40px;
     padding-left: 52px;
     width: 240px;
@@ -112,13 +116,13 @@
   text-transform: uppercase;
   letter-spacing: 0.8px;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     margin-bottom: 163px;
     margin-left: 48px;
     width: 379px;
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     margin-bottom: 70px;
     margin-left: 0;
     width: 287px;
@@ -126,7 +130,7 @@
 }
 
 .main-screen__desktop-text {
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
@@ -134,7 +138,7 @@
 .main-screen__mobile-text {
   display: none;
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     display: inline;
   }
 }
@@ -150,7 +154,7 @@
   font-size: 14px;
   line-height: 16px;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     display: none;
   }
 }
@@ -161,12 +165,12 @@
   right: -72px;
   z-index: -1;
 
-  @media (max-width: 1439px) {
+  @media (max-width: 1023px) {
     right: -10px;
     bottom: 233px;
   }
 
-  @media (max-width: 749px) {
+  @media (max-width: 767px) {
     right: 0;
     top: 37px;
   }
