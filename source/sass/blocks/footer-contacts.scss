@@ -9,6 +9,8 @@
 
   @media (max-width: 767px) {
     @include mobile-content;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 25px;
     padding-top: 28px;
   }
@@ -17,11 +19,19 @@
 .footer-contacts__header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: 26px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 31px;
+  }
 }
 
 .footer-contacts__heading {
   @include footer-heading;
+
+  @media (max-width: 767px) {
+    padding-left: 0;
+  }
 }
 
 .footer-contacts__button {

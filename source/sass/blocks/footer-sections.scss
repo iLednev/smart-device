@@ -1,14 +1,18 @@
 .footer-sections__content {
+  margin-right: 100px;
   max-width: 558px;
 
   @media (max-width: 1023px) {
+    margin-right: 0;
     max-width: 250px;
   }
 
   @media (max-width: 767px) {
     @include mobile-content;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 28px;
-    padding-top: 28px;
+    padding-top: 30px;
   }
 }
 
@@ -21,6 +25,10 @@
 .footer-sections__heading {
   @include footer-heading;
   padding-left: 3px;
+
+  @media (max-width: 767px) {
+    padding-left: 0;
+  }
 }
 
 .footer-sections__button {
