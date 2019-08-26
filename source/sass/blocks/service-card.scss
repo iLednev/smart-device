@@ -1,3 +1,84 @@
+.service-card {
+  &:nth-of-type(1) .service-card__link {
+    background-image: url("../img/service-item-1@1x.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/service-item-1@2x.png");
+    }
+  }
+
+  &:nth-of-type(2) .service-card__link {
+    background-image: url("../img/service-item-2@1x.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/service-item-2@2x.png");
+    }
+  }
+
+  &:nth-of-type(3) .service-card__link {
+    background-image: url("../img/service-item-3@1x.png");
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/service-item-3@2x.png");
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &:nth-of-type(1) .service-card__link {
+      width: 715px;
+      background-image: url("../img/service-item-1-tablet@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/service-item-1-tablet@2x.png");
+      }
+    }
+
+    &:nth-of-type(2) .service-card__link {
+      background-image: url("../img/service-item-2-tablet@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/service-item-2-tablet@2x.png");
+      }
+    }
+
+    &:nth-of-type(3) .service-card__link {
+      padding-top: 50px;
+      background-image: url("../img/service-item-3-tablet@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/service-item-3-tablet@2x.png");
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &:nth-of-type(1) .service-card__link {
+      width: 290px;
+      background-image: url("../img/service-item-1-mobile@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/service-item-1-mobile@2x.png");
+      }
+    }
+
+    &:nth-of-type(2) .service-card__link {
+      background-image: url("../img/service-item-2-mobile@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/service-item-2-mobile@2x.png");
+      }
+    }
+
+    &:nth-of-type(3) .service-card__link {
+      background-image: url("../img/service-item-3-mobile@1x.png");
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/service-item-3-mobile@2x.png");
+      }
+    }
+  }
+}
+
 .service-card__link {
   box-sizing: border-box;
   display: flex;
@@ -12,61 +93,11 @@
     outline: 2px solid $lightblue;
   }
 
-  &:nth-child(1) {
-    background-image: url("../img/service-item-1@1x.png");
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/service-item-1@2x.png");
-    }
-  }
-
-  &:nth-child(2) {
-    background-image: url("../img/service-item-2@1x.png");
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/service-item-2@2x.png");
-    }
-  }
-
-  &:nth-child(3) {
-    background-image: url("../img/service-item-3@1x.png");
-
-    @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/service-item-3@2x.png");
-    }
-  }
-
   @media (max-width: 1023px) {
     padding-top: 40px;
     padding-left: 45px;
     width: 720px;
     height: 256px;
-
-    &:nth-child(1) {
-      width: 715px;
-      background-image: url("../img/service-item-1-tablet@1x.png");
-
-      @media (min-resolution: 1.5dppx) {
-        background-image: url("../img/service-item-1-tablet@2x.png");
-      }
-    }
-
-    &:nth-child(2) {
-      background-image: url("../img/service-item-2-tablet@1x.png");
-
-      @media (min-resolution: 1.5dppx) {
-        background-image: url("../img/service-item-2-tablet@2x.png");
-      }
-    }
-
-    &:nth-child(3) {
-      padding-top: 50px;
-      background-image: url("../img/service-item-3-tablet@1x.png");
-
-      @media (min-resolution: 1.5dppx) {
-        background-image: url("../img/service-item-3-tablet@2x.png");
-      }
-    }
   }
 
   @media (max-width: 767px) {
@@ -74,31 +105,6 @@
     padding-left: 35px;
     width: 290px;
     height: 256px;
-
-    &:nth-child(1) {
-      width: 290px;
-      background-image: url("../img/service-item-1-mobile@1x.png");
-
-      @media (min-resolution: 1.5dppx) {
-        background-image: url("../img/service-item-1-mobile@2x.png");
-      }
-    }
-
-    &:nth-child(2) {
-      background-image: url("../img/service-item-2-mobile@1x.png");
-
-      @media (min-resolution: 1.5dppx) {
-        background-image: url("../img/service-item-2-mobile@2x.png");
-      }
-    }
-
-    &:nth-child(3) {
-      background-image: url("../img/service-item-3-mobile@1x.png");
-
-      @media (min-resolution: 1.5dppx) {
-        background-image: url("../img/service-item-3-mobile@2x.png");
-      }
-    }
   }
 }
 

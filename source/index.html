@@ -31,7 +31,7 @@
           <span class="header-info__mobile-hidden">+7 (495) 000 52 52</span>
         </a>
       </address>
-      <a class="main-header__callback" href="#"><span class="main-header__mobile-hidden">Заказать звонок</span></a>
+      <a class="main-header__callback  js-popup-open" href="#">Заказать звонок</a>
     </div>
   </header>
 
@@ -169,6 +169,30 @@
       </div>
     </section>
   </main>
+
+  <section class="main__feedback  feedback--popup  js-popup">
+    <div class="feedback__content">
+      <div class="feedback__wrapper">
+        <h2 class="feedback__heading">Закажите звонок</h2>
+        <p class="feedback__lead">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <div class="feedback__form">
+          <form>
+            <input type="text" placeholder="Имя">
+            <input type="tel" placeholder="Телефон">
+            <textarea>Ваш вопрос</textarea>
+            <button type="submit">Отправить</button>
+            <label>
+              <input class="visually-hidden" type="checkbox" checked>
+              <span>Я согласен на обработку персональных данных</span>
+            </label>
+          </form>
+        </div>
+        <button class="feedback__close  js-popup-close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+    </div>
+  </section>
 
   <footer class="main-footer">
     <div class="main-footer__content">

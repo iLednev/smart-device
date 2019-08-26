@@ -50,8 +50,8 @@ $white: #ffffff;
 @mixin tablet-content {
   box-sizing: border-box;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   min-width: 768px;
   max-width: 900px;
 }

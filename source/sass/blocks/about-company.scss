@@ -10,7 +10,7 @@
   @media (max-width: 1023px) {
     @include tablet-content;
     padding-top: 23px;
-    padding-left: 200px;
+    padding-left: 210px;
   }
 
   @media (max-width: 767px) {
@@ -106,6 +106,8 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 
+  cursor: pointer;
+
   @media (max-width: 1023px) {
     margin-bottom: 84px;
     margin-left: 3px;
@@ -123,7 +125,7 @@
 
   @media (max-width: 1023px) {
     top: 20px;
-    left: -10px;
+    left: 0;
   }
 
   @media (max-width: 767px) {
