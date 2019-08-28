@@ -1,3 +1,7 @@
+.advantages {
+  background-color: $white;
+}
+
 .advantages__content {
   @include desktop-content;
   display: flex;

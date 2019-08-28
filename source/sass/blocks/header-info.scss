@@ -21,6 +21,15 @@
   font-size: 16px;
   line-height: 18px;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
   &::before {
     content: "";
     position: absolute;

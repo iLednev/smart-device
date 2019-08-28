@@ -3,6 +3,7 @@
   padding-top: 1px;
   padding-left: 3px;
   width: 214px;
+  text-decoration: none;
 
   @media (max-width: 1039px) {
     padding-left: 0;
@@ -15,6 +16,15 @@
 
   &--footer {
     width: 220px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
   }
 }
 

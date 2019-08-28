@@ -87,6 +87,7 @@
   padding-left: 43px;
   width: 370px;
   height: 620px;
+  background-image: url("../img/service-item-1@1x.png");
   text-decoration: none;
 
   &:hover,
@@ -94,11 +95,16 @@
     outline: 2px solid $lightblue;
   }
 
+  &:active {
+    opacity: 0.8;
+  }
+
   @media (max-width: 1023px) {
     padding-top: 40px;
     padding-left: 45px;
     width: 720px;
     height: 256px;
+    background-image: url("../img/service-item-1-tablet@1x.png");
   }
 
   @media (max-width: 767px) {
@@ -106,6 +112,7 @@
     padding-left: 35px;
     width: 290px;
     height: 256px;
+    background-image: url("../img/service-item-1-mobile@1x.png");
   }
 }
 

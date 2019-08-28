@@ -23,18 +23,10 @@ $white: #ffffff;
 }
 
 @mixin plus-button {
-  display: block;
-  padding: 0;
-  width: 16px;
-  height: 16px;
-  background: none;
-  background-image: url("../img/minus.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  border: none;
+
 
   &.closed {
-    background-image: url("../img/plus.svg");
+
   }
 }
 

@@ -17,6 +17,7 @@
 
   @media (max-width: 767px) {
     @include mobile-content;
+    max-width: 290px;
     flex-direction: column;
     padding-top: 45px;
     padding-bottom: 50px;
@@ -61,13 +62,26 @@
 .footer-socials__list {
   @include list-reset;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   padding-left: 3px;
-  width: 112px;
+  width: 115px;
+}
+
+.footer-socials__item:not(:nth-child(3n + 3)) {
+  margin-right: 16px;
 }
 
 .footer-socials__link {
   color: #cdcdcd;
+
+  &:hover,
+  &:focus {
+    color: $lightblue;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .footer-socials__img {

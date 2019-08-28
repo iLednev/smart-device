@@ -46,13 +46,13 @@
   <h1 class="visually-hidden">Smart Device - умные технологии</h1>
   <header class="main-header">
     <div class="main-header__content">
-      <div class="main-header__logo  logo">
+      <a class="main-header__logo  logo" href="#">
         <img src="img/logo.svg" class="logo__pic" alt="Логотип Smart Device">
         <p class="logo__name">
           Smart Device
           <span class="logo__tagline">умные технологии</span>
         </p>
-      </div>
+      </a>
       <button class="main-header__menu"><span class="visually-hidden">Открыть меню</span></button>
       <address class="main-header__info  header-info">
         <a class="header-info__link  header-info__link--email" href="mailto:info@sd.ru">
@@ -75,12 +75,12 @@
           <span class="main-screen__desktop-text">Получить бесплатную консультацию</span>
           <span class="main-screen__mobile-text">Бесплатная консультация</span>
         </a>
-        <p class="main-screen__scroll">Скролл вниз</p>
+        <button class="main-screen__scroll  js-scroll">Скролл вниз</button>
         <div class="main-screen__image">
           <picture>
-            <source srcset="img/circuit-boards-mobile@1x.png, img/circuit-boards-mobile@2x.png" media="(max-width: 767px)">
-            <source srcset="img/circuit-boards-tablet@1x.png, img/circuit-boards-tablet@2x.png" media="(max-width: 1023px)">
-            <img src="img/circuit-boards@1x.png" srcset="img/circuit-boards@1x.png, img/circuit-boards@2x.png" alt="Изображение печатной платы">
+            <source srcset="img/circuit-boards-mobile@1x.png, img/circuit-boards-mobile@2x.png 2x" media="(max-width: 767px)">
+            <source srcset="img/circuit-boards-tablet@1x.png, img/circuit-boards-tablet@2x.png 2x" media="(max-width: 1023px)">
+            <img src="img/circuit-boards@1x.png" srcset="img/circuit-boards@1x.png, img/circuit-boards@2x.png 2x" alt="Изображение печатной платы">
           </picture>
         </div>
       </div>
@@ -141,7 +141,7 @@
         </p>
         <a class="about-company__link">Подробнее</a>
         <picture>
-          <source srcset="img/company-year-tablet@1x.png, img/company-year-tablet@2x.png" media="(max-width: 1023px)">
+          <source srcset="img/company-year-tablet@1x.png, img/company-year-tablet@2x.png 2x" media="(max-width: 1023px)">
           <img class="about-company__year" src="img/company-year@1x.png" srcset="img/company-year@1x.png, img/company-year@2x.png 2x" alt="изображение числа 2005">
         </picture>
       </div>
@@ -158,21 +158,21 @@
             <a class="service-card__link" href="#">
               <span class="visually-hidden">Подробнее</span>
               <h3 class="service-card__heading">Производство печатных плат</h3>
-              <div class="service-card__arrow" href="#"></div>
+              <div class="service-card__arrow"></div>
             </a>
           </li>
           <li class="services__item  service-card">
             <a class="service-card__link" href="#">
               <span class="visually-hidden">Подробнее</span>
               <h3 class="service-card__heading">Монтаж печатных плат</h3>
-              <div class="service-card__arrow" href="#"></div>
+              <div class="service-card__arrow"></div>
             </a>
           </li>
           <li class="services__item  service-card">
             <a class="service-card__link" href="#">
               <span class="visually-hidden">Подробнее</span>
               <h3 class="service-card__heading">Комплектующие для светотехники</h3>
-              <div class="service-card__arrow" href="#"></div>
+              <div class="service-card__arrow"></div>
             </a>
           </li>
         </ul>
@@ -186,9 +186,12 @@
           <p class="feedback__lead">Мы проконсультируем Вас бесплатно</p>
           <div class="feedback__form">
             <form>
-              <input type="text" placeholder="Имя">
-              <input type="tel" placeholder="Телефон">
-              <textarea>Ваш вопрос</textarea>
+              <label for="name" class="visually-hidden">Ваше имя</label>
+              <input type="text" placeholder="Имя" id="name">
+              <label for="tel" class="visually-hidden">Ваш телефон</label>
+              <input type="tel" placeholder="Телефон" id="tel">
+              <label for="question" class="visually-hidden">Ваш вопрос</label>
+              <textarea id="question" placeholder="Ваш вопрос"></textarea>
               <button type="submit">Задать вопрос</button>
               <label>
                 <input class="visually-hidden" type="checkbox" checked="">
@@ -201,16 +204,19 @@
     </section>
   </main>
 
-  <section class="main__feedback  feedback--popup  js-popup">
+  <section class="feedback  feedback--popup  js-popup">
     <div class="feedback__content">
       <div class="feedback__wrapper">
         <h2 class="feedback__heading">Закажите звонок</h2>
         <p class="feedback__lead">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <div class="feedback__form">
           <form>
-            <input type="text" placeholder="Имя">
-            <input type="tel" placeholder="Телефон">
-            <textarea>Ваш вопрос</textarea>
+            <label for="pname" class="visually-hidden">Ваше имя</label>
+            <input type="text" placeholder="Имя" id="pname">
+            <label for="ptel" class="visually-hidden">Ваш телефон</label>
+            <input type="tel" placeholder="Телефон" id="ptel">
+            <label for="pquestion" class="visually-hidden">Ваш вопрос</label>
+            <textarea id="pquestion" placeholder="Ваш вопрос"></textarea>
             <button type="submit">Отправить</button>
             <label>
               <input class="visually-hidden" type="checkbox" checked="">
@@ -230,13 +236,13 @@
       <section class="main-footer__socials  footer-socials">
         <div class="footer-socials__content">
           <h2 class="visually-hidden">Логотип и соцсети</h2>
-          <div class="footer-socials__logo  logo  logo--footer">
+          <a class="footer-socials__logo  logo  logo--footer" href="#">
             <img src="img/logo.svg" class="logo__pic  logo__pic--footer" alt="Логотип Smart Device">
             <p class="logo__name  logo__name--footer">
               Service Device
               <span class="logo__tagline">умные технологии</span>
             </p>
-          </div>
+          </a>
 
           <p class="footer-socials__text">1999-2018 SD Service Devices</p>
 
@@ -272,12 +278,10 @@
       <div class="main-footer__lists">
         <section class="main-footer__sections  footer-sections">
           <div class="footer-sections__content">
-            <header class="footer-sections__header">
+            <div class="footer-sections__header  js-check-button  closed">
               <h2 class="footer-sections__heading">Разделы сайта</h2>
-              <button class="footer-sections__button  js-check-button  closed">
-                <span class="visually-hidden">Открыть раздел</span>
-              </button>
-            </header>
+              <button class="footer-sections__button"></button>
+            </div>
             <ul class="footer-sections__list  js-check-list  closed">
               <li class="footer-sections__item">
                 <a class="footer-sections__link" href="#">О компании</a>
@@ -306,12 +310,10 @@
 
         <section class="main-footer__contacts  footer-contacts">
           <div class="footer-contacts__content">
-            <header class="footer-contacts__header">
+            <div class="footer-contacts__header  js-check-button">
               <h2 class="footer-contacts__heading">Наш офис</h2>
-              <button class="footer-contacts__button  js-check-button">
-                <span class="visually-hidden">Открыть раздел</span>
-              </button>
-            </header>
+              <button class="footer-contacts__button"></button>
+            </div>
             <address class="footer-contacts__address  js-check-list">
               <p class="footer-contacts__street">
                 г. Мытищи, Олимпийский проспект, д.10

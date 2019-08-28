@@ -105,8 +105,17 @@
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
-
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $lightblue;
+    color: $white;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 
   @media (max-width: 1023px) {
     margin-bottom: 84px;

@@ -10,15 +10,21 @@ html {
   height: 100%;
   background-image: url("../img/main-bg.png");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: calc(50% + 9px) 0;
 
   @media (max-width: 1023px) {
     padding-top: 18px;
     background-image: url("../img/main-bg-tablet.png");
+    background-position: 50% -6px;
   }
 
   @media (max-width: 767px) {
     padding-top: 16px;
-    background-position: calc(50% - 65px) -12px;
+    background-position: calc(50% - 65px) -20px;
+    background-size: auto;
+  }
+
+  &.popup-opened {
+    overflow: hidden;
   }
 }

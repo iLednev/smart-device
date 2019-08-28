@@ -76,8 +76,19 @@
 .services__item {
   margin-bottom: 30px;
 
-  &:not(:last-child) {
+  &:not(:nth-child(3n + 3)) {
     margin-right: 30px;
+  }
+
+  @media (max-width: 1199px) {
+    &:nth-child(3n + 3) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-child(2n + 2)) {
+      margin-right: 30px;
+    }
+  }
 
     @media (max-width: 1023px) {
       margin-bottom: 46px;
@@ -86,5 +97,6 @@
     @media (max-width: 767px) {
       margin-bottom: 30px;
     }
-  }
+
+
 }

@@ -99,7 +99,8 @@
 
 .main-screen__link {
   @include font-roboto-condensed;
-  margin-bottom: 275px;
+  box-sizing: border-box;
+  margin-bottom: 276px;
   margin-left: 94px;
   display: flex;
   align-items: center;
@@ -115,6 +116,17 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.8px;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $lightblue;
+    border: 2px solid $lightblue;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 
   @media (max-width: 1023px) {
     margin-bottom: 163px;
@@ -145,14 +157,30 @@
 
 .main-screen__scroll {
   @include font-pt-mono;
-  position: absolute;
-  bottom: 127px;
-  left: -16px;
+  position: fixed;
+  bottom: 208px;
+  left: 209px;
   margin: 0;
+  background: none;
+  border: none;
   transform: rotate(-90deg);
   color: $textgray;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  &.hidden {
+    display: none;
+  }
 
   @media (max-width: 1023px) {
     display: none;
