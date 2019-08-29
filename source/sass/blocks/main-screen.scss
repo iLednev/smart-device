@@ -157,9 +157,9 @@
 
 .main-screen__scroll {
   @include font-pt-mono;
-  position: fixed;
-  bottom: 208px;
-  left: 209px;
+  position: absolute;
+  bottom: 126px;
+  left: -22px;
   margin: 0;
   background: none;
   border: none;
@@ -178,13 +178,9 @@
     opacity: 0.4;
   }
 
-  &.hidden {
-    display: none;
-  }
-
-  @media (max-width: 1800px) {
-    left: 20px;
-  }
+  //@media (max-width: 1800px) {
+  //  left: 20px;
+  //}
 
   @media (max-width: 1023px) {
     display: none;

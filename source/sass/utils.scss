@@ -22,14 +22,6 @@ $white: #ffffff;
   font-family: "PT Mono", "Times New Roman", serif;
 }
 
-@mixin plus-button {
-
-
-  &.closed {
-
-  }
-}
-
 @mixin desktop-content {
   box-sizing: border-box;
   margin: 0 auto;
@@ -66,7 +58,6 @@ $white: #ffffff;
 @mixin footer-heading {
   @include font-roboto-condensed;
   margin: 0;
-  padding-left: 3px;
   font-weight: normal;
   font-size: 15px;
   line-height: 16px;

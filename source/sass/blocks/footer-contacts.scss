@@ -59,10 +59,6 @@
 
 .footer-contacts__button {
   display: none;
-
-  @media (max-width: 767px) {
-    @include plus-button;
-  }
 }
 
 .footer-contacts__address {

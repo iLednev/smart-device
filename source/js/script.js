@@ -52,29 +52,13 @@ function scroll(scrollTarget) {
   }, 10);
 }
 
-var coords = {
-  advantages: document.querySelector('.advantages').offsetTop,
-  aboutCompany: document.querySelector('.about-company').offsetTop,
-  services: document.querySelector('.services').offsetTop,
-};
+var advantages = document.querySelector('.advantages').offsetTop;
 
 var scrollButton = document.querySelector('.js-scroll');
 
 scrollButton.addEventListener('click', function () {
-  if (scrollY < coords.advantages) {
-    scroll(coords.advantages);
-  } else if (scrollY >= coords.advantages && scrollY < coords.aboutCompany) {
-    scroll(coords.aboutCompany);
-  } else if (scrollY >= coords.aboutCompany && scrollY < coords.services) {
-    scroll(coords.services);
-  }
-});
-
-document.addEventListener('scroll', function () {
-  if (scrollY >= coords.services) {
-    scrollButton.classList.add('hidden');
-  } else if (scrollY < coords.services && scrollButton.classList.contains('hidden')) {
-    scrollButton.classList.remove('hidden');
+  if (scrollY < advantages) {
+    scroll(advantages);
   }
 });
 
@@ -92,7 +76,7 @@ var nameField = {
 
 var telField = {
   inputs: inputsTel,
-  check: /[^0-9()\s]/,
+  check: /[^\d()\s-+_]/,
   string: 'Телефон должен содержать только цифры'
 };
 
@@ -118,31 +102,40 @@ checkInputs(nameField.inputs, nameField.check, nameField.string);
 checkInputs(telField.inputs, telField.check, telField.string);
 checkInputs(textarea.inputs, textarea.check, textarea.string);
 
-
 inputsTel.forEach(function (item) {
+  var temp;
+  var char;
+  var backspace;
+
   item.addEventListener('focus', function () {
-    if (!item.value) {
-      item.value = '+7 ';
-    }
+    item.value = item.value === '' ? '+7 (___) ___ __-__' : item.value;
+    item.setSelectionRange(4, 4);
   });
 
   item.addEventListener('keydown', function (evt) {
+    backspace = false;
     if (evt.code !== 'Backspace') {
-      if (item.value.length === 3) {
+      if (item.value.length >= 18 && !item.value.includes('_')) {
         evt.preventDefault();
-        item.value += '(' + evt.key;
-      } else if (item.value.length === 6) {
-        evt.preventDefault();
-        item.value += evt.key + ') ';
-      } else if (item.value.length === 11) {
-        evt.preventDefault();
-        item.value += evt.key + ' ';
-      } else if (item.value.length === 14) {
-        evt.preventDefault();
-        item.value += evt.key + '-';
-      } else if (item.value.length === 18) {
+      } else if (/\d/.test(evt.key)) {
+        char = item.value.indexOf('_');
+        item.setSelectionRange(char, char);
+      } else {
         evt.preventDefault();
       }
+    } else {
+      backspace = true;
+    }
+  });
+
+  item.addEventListener('input', function () {
+    if (!backspace) {
+      item.value.replace(/\d_/, function (match) {
+        temp = match.charAt(0);
+      });
+
+      item.setRangeText(temp, char, char + 2);
+      item.setSelectionRange(char + 1, char + 1);
     }
   });
 });

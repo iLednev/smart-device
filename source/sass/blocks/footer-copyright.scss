@@ -12,6 +12,10 @@
   padding-bottom: 14px;
   padding-left: 20px;
 
+  @media (max-width: 1439px) {
+    justify-content: center;
+  }
+
   @media (max-width: 1023px) {
     @include tablet-content;
     padding-top: 22px;
@@ -38,14 +42,26 @@
 
   &:first-of-type {
     margin-right: 72px;
+
+    @media (max-width: 1439px) {
+      margin-right: auto;
+    }
   }
 
   &:nth-of-type(2) {
     margin-right: 138px;
+
+    @media (max-width: 1439px) {
+      margin-right: auto;
+    }
   }
 
   &:last-of-type {
     margin-left: auto;
+
+    @media (max-width: 1439px) {
+      margin-right: 10px;
+    }
 
     @media (max-width: 767px) {
       margin-left: 0;
