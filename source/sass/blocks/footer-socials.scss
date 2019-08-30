@@ -44,7 +44,8 @@
   @media (max-width: 1023px) {
     @include font-pt-mono;
     display: block;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-right: auto;
     color: $textgray;
     font-size: 12px;

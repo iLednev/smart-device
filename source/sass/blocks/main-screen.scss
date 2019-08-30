@@ -24,7 +24,7 @@
 
 .main-screen__heading {
   @include font-roboto-condensed;
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 30px;
   width: 720px;
   color: $white;
@@ -52,7 +52,7 @@
 .main-screen__description {
   @include font-pt-mono;
   position: relative;
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 42px;
   padding-left: 94px;
   width: 683px;
@@ -177,10 +177,6 @@
   &:active {
     opacity: 0.4;
   }
-
-  //@media (max-width: 1800px) {
-  //  left: 20px;
-  //}
 
   @media (max-width: 1023px) {
     display: none;

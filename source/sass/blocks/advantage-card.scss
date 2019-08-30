@@ -51,7 +51,7 @@
 
 .advantage-card__heading {
   @include font-roboto-condensed;
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 15px;
   width: 484px;
 
@@ -83,7 +83,7 @@
 
 .advantage-card__description {
   @include font-pt-mono;
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 49px;
   width: 484px;
   min-height: 103px;

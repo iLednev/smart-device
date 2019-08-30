@@ -2,7 +2,7 @@
   @include desktop-content;
   display: flex;
   align-items: center;
-
+  padding-top: 32px;
 
   & a {
     text-decoration: none;
@@ -10,10 +10,12 @@
 
   @media (max-width: 1023px) {
     @include tablet-content;
+    padding-top: 18px;
   }
 
   @media (max-width: 767px) {
     @include mobile-content;
+    padding-top: 16px;
   }
 }
 
